@@ -2,6 +2,7 @@
 package sinec;
 
 import java.awt.event.KeyEvent;
+import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
 import static sinec.Sinec.generar;
 //import static sinec.Sinec.numero;
@@ -18,8 +19,9 @@ public class Homes extends javax.swing.JFrame {
      * Creates new form Homes
      */
     public Homes() {
+       
         initComponents();
-         
+        
     }
     
     
@@ -33,6 +35,8 @@ public class Homes extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        ContenPanel = new javax.swing.JPanel();
+        jSeparator3 = new javax.swing.JSeparator();
         Panel11 = new javax.swing.JTextField();
         jLabel41 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
@@ -76,7 +80,15 @@ public class Homes extends javax.swing.JFrame {
         jLabel30 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         ruta = new javax.swing.JTextField();
-        label1 = new java.awt.Label();
+        jLabel2 = new javax.swing.JLabel();
+        btnruta = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        jSeparator4 = new javax.swing.JSeparator();
+        jSeparator5 = new javax.swing.JSeparator();
+
+        jSeparator3.setOrientation(javax.swing.SwingConstants.VERTICAL);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -125,7 +137,7 @@ public class Homes extends javax.swing.JFrame {
         getContentPane().add(Panel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 250, 160, -1));
 
         jLabel37.setText("Panel 4");
-        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 50, -1, -1));
+        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 50, -1, -1));
 
         Panel17.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -152,14 +164,14 @@ public class Homes extends javax.swing.JFrame {
         getContentPane().add(Panel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 110, 160, -1));
 
         jLabel38.setText("Panel 8");
-        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 120, -1, -1));
+        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 120, -1, -1));
 
         Panel20.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 Panel20KeyReleased(evt);
             }
         });
-        getContentPane().add(Panel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 320, 160, -1));
+        getContentPane().add(Panel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 320, 160, -1));
 
         Panel13.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -169,14 +181,14 @@ public class Homes extends javax.swing.JFrame {
         getContentPane().add(Panel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 250, 160, -1));
 
         jLabel33.setText("Panel 7");
-        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 110, -1, -1));
+        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 110, -1, -1));
 
         Panel4.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 Panel4KeyReleased(evt);
             }
         });
-        getContentPane().add(Panel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 50, 160, -1));
+        getContentPane().add(Panel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 50, 160, -1));
 
         jLabel22.setText("Panel 1");
         getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 54, -1, -1));
@@ -192,7 +204,7 @@ public class Homes extends javax.swing.JFrame {
         getContentPane().add(Panel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 50, 160, -1));
 
         jLabel39.setText("Panel 12");
-        getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 190, -1, -1));
+        getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 180, -1, -1));
 
         jLabel23.setText("Panel 5");
         getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 110, -1, -1));
@@ -216,7 +228,7 @@ public class Homes extends javax.swing.JFrame {
                 Panel8KeyReleased(evt);
             }
         });
-        getContentPane().add(Panel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 120, 160, -1));
+        getContentPane().add(Panel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 110, 160, -1));
 
         Panel1.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -241,7 +253,7 @@ public class Homes extends javax.swing.JFrame {
         jLabel42.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel42.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel42.setText("Bar scanner");
-        getContentPane().add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 0, 96, -1));
+        getContentPane().add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 0, 96, -1));
 
         Panel10.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
@@ -251,14 +263,14 @@ public class Homes extends javax.swing.JFrame {
         getContentPane().add(Panel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 160, -1));
 
         jLabel32.setText("Panel 3");
-        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 50, -1, -1));
+        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 50, -1, -1));
 
         Panel16.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 Panel16KeyReleased(evt);
             }
         });
-        getContentPane().add(Panel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 250, 160, -1));
+        getContentPane().add(Panel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 250, 160, -1));
 
         jLabel40.setText("Panel 16");
         getContentPane().add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 250, -1, -1));
@@ -278,7 +290,7 @@ public class Homes extends javax.swing.JFrame {
                 Panel12KeyReleased(evt);
             }
         });
-        getContentPane().add(Panel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 180, 160, -1));
+        getContentPane().add(Panel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 180, 160, -1));
 
         jLabel24.setText("Panel 9");
         getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 180, -1, -1));
@@ -286,35 +298,76 @@ public class Homes extends javax.swing.JFrame {
         jLabel30.setText("Panel 18");
         getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 320, -1, -1));
 
-        jLabel1.setText("IT CROWT SINEC    BarScanner v1.0");
+        jLabel1.setText("IT CROWT SINEC    BarScanner v1.2");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, -1, -1));
 
         ruta.setText("C:\\xml");
         ruta.setToolTipText("");
-        getContentPane().add(ruta, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 450, 180, -1));
+        getContentPane().add(ruta, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 450, 330, -1));
 
-        label1.setText("Ruta");
-        getContentPane().add(label1, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 450, -1, -1));
+        jLabel2.setText(".");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 120, 20, -1));
+
+        btnruta.setText("Ruta");
+        btnruta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnrutaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnruta, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 450, -1, -1));
+
+        jLabel3.setText(".");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 510, -1, -1));
+
+        jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 30, 20, 370));
+        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 402, 1130, 30));
+
+        jSeparator4.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        getContentPane().add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 0, 20, 400));
+
+        jSeparator5.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        getContentPane().add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 0, 20, 400));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void Panel1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Panel1KeyReleased
         if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
+            if (Panel1.getText().equals("")) {
+                System.out.println("entro");
+            }
+            else{
             serie[cont]=Panel1.getText();
+           
             System.out.println(serie[cont]);
             cont++;
             Panel2.requestFocus();
-            
+            }
         }
     }//GEN-LAST:event_Panel1KeyReleased
 
     private void Panel2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Panel2KeyReleased
               if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
+                 
             serie[cont]=Panel2.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel3.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel3.requestFocus();
+           }
+                  
         }
     }//GEN-LAST:event_Panel2KeyReleased
 
@@ -322,8 +375,21 @@ public class Homes extends javax.swing.JFrame {
         if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel3.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel4.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                    do {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel4.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel3KeyReleased
 
@@ -331,8 +397,21 @@ public class Homes extends javax.swing.JFrame {
         if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel4.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel5.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                      do {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  }while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel5.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel4KeyReleased
 
@@ -340,8 +419,21 @@ public class Homes extends javax.swing.JFrame {
        if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel5.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel6.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel6.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel5KeyReleased
 
@@ -349,8 +441,21 @@ public class Homes extends javax.swing.JFrame {
         if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel6.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel7.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do {                      
+                      if (serie[cont].equals(serie[a])){
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  }while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel7.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel6KeyReleased
 
@@ -358,8 +463,21 @@ public class Homes extends javax.swing.JFrame {
        if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel7.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel8.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel8.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel7KeyReleased
 
@@ -367,8 +485,21 @@ public class Homes extends javax.swing.JFrame {
          if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel8.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel9.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel9.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel8KeyReleased
 
@@ -376,8 +507,21 @@ public class Homes extends javax.swing.JFrame {
         if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel9.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel10.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel10.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel9KeyReleased
 
@@ -385,8 +529,21 @@ public class Homes extends javax.swing.JFrame {
         if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel10.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel11.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel11.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel10KeyReleased
 
@@ -394,8 +551,21 @@ public class Homes extends javax.swing.JFrame {
          if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel11.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel12.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  }while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel12.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel11KeyReleased
 
@@ -403,8 +573,21 @@ public class Homes extends javax.swing.JFrame {
          if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel12.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel13.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel13.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel12KeyReleased
 
@@ -412,8 +595,21 @@ public class Homes extends javax.swing.JFrame {
          if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel13.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel14.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel14.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel13KeyReleased
 
@@ -421,8 +617,21 @@ public class Homes extends javax.swing.JFrame {
          if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel14.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel15.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel15.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel14KeyReleased
 
@@ -430,8 +639,22 @@ public class Homes extends javax.swing.JFrame {
          if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel15.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel16.requestFocus();
+           
+                        int a=cont-1; 
+              boolean ban=true;
+                  do {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel16.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel15KeyReleased
 
@@ -439,8 +662,21 @@ public class Homes extends javax.swing.JFrame {
          if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel16.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel17.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel17.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel16KeyReleased
 
@@ -448,8 +684,21 @@ public class Homes extends javax.swing.JFrame {
                  if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel17.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel18.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel18.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel17KeyReleased
 
@@ -457,8 +706,21 @@ public class Homes extends javax.swing.JFrame {
                 if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel18.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel19.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel19.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel18KeyReleased
 
@@ -466,23 +728,62 @@ public class Homes extends javax.swing.JFrame {
             if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
             serie[cont]=Panel19.getText();
             System.out.println(serie[cont]);
-            cont++;
-            Panel20.requestFocus();
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                  if (ban==true) {
+                          cont++;       
+                          Panel20.requestFocus();
+           }
         }
     }//GEN-LAST:event_Panel19KeyReleased
 
     private void Panel20KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_Panel20KeyReleased
         if (evt.getKeyCode()==KeyEvent.VK_ENTER) {
-            serie[cont]=Panel19.getText();
+            serie[cont]=Panel20.getText();
             System.out.println(serie[cont]);
-            cont++;
+            
+            int a=cont-1; 
+            boolean ban=true;
+                  do  {                      
+                      if (serie[cont].equals(serie[a])) {
+                         borrar();
+                         ban=false;
+                         a=0;
+                         JOptionPane.showMessageDialog(rootPane, "Codigo Repetido");
+                      }
+                      a--;            
+                  } while (a>=0);
+                    if (ban==true) {
+                          cont++;       
+                          Panel20.requestFocus();
+           }
+                //  System.out.println(cont+"uyghgjgukujb");
             if (cont==20){
                 try {
                   rutaFile=ruta.getText();
                   generar();  
+                  
+                  borrar();
                 } catch (Exception e) {
                 }
                     
+               
+                
+               // JOptionPane.showConfirmDialog(rootPane,"FILE saved");
+            }
+            
+        }
+    }//GEN-LAST:event_Panel20KeyReleased
+ public void borrar(){
                 Panel1.setText(""); 
                 Panel2.setText("");
                 Panel3.setText("");
@@ -509,12 +810,17 @@ public class Homes extends javax.swing.JFrame {
                 Panel20.setText("");
                 cont=0;
                 Panel1.requestFocus();
+               // serie=null;
                 
-               // JOptionPane.showConfirmDialog(rootPane,"FILE saved");
-            }
-            
-        }
-    }//GEN-LAST:event_Panel20KeyReleased
+ }
+    private void btnrutaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrutaActionPerformed
+               JFileChooser fc=new JFileChooser();
+               fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+               int seleccion=fc.showOpenDialog(ContenPanel);
+               
+               ruta.setText(fc.getSelectedFile().toString());
+        
+    }//GEN-LAST:event_btnrutaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -553,6 +859,7 @@ public class Homes extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel ContenPanel;
     private javax.swing.JTextField Panel1;
     private javax.swing.JTextField Panel10;
     private javax.swing.JTextField Panel11;
@@ -573,7 +880,9 @@ public class Homes extends javax.swing.JFrame {
     private javax.swing.JTextField Panel7;
     private javax.swing.JTextField Panel8;
     private javax.swing.JTextField Panel9;
+    private javax.swing.JButton btnruta;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -582,6 +891,7 @@ public class Homes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
@@ -595,7 +905,11 @@ public class Homes extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
-    private java.awt.Label label1;
+    private javax.swing.JSeparator jSeparator1;
+    private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JSeparator jSeparator3;
+    private javax.swing.JSeparator jSeparator4;
+    private javax.swing.JSeparator jSeparator5;
     private javax.swing.JTextField ruta;
     // End of variables declaration//GEN-END:variables
 
